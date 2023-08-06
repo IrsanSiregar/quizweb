@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar dan Kuis - Edukasi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Belajar dan Kuis - Edukasi</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#subjects">Mata Pelajaran</a></li>
+        <li><a href="#quiz">Kuis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Selamat Datang di Belajar dan Kuis</h2>
+      <p>Website ini menyediakan konten edukasi dan kuis tentang berbagai mata pelajaran. Mulai jelajahi sekarang!</p>
+      <img src="education.jpg" alt="Gambar Edukasi">
+    </section>
+
+    <section id="subjects">
+      <h2>Mata Pelajaran</h2>
+      <ul>
+        <li>
+          <a href="#math" data-subject="math">Matematika</a>
+          <p>Matematika adalah ilmu yang mempelajari tentang angka, bilangan, dan perhitungan. Pelajari konsep matematika di sini!</p>
+        </li>
+        <li>
+          <a href="#science" data-subject="science">Ilmu Pengetahuan</a>
+          <p>Ilmu Pengetahuan membahas berbagai fenomena alam dan kehidupan. Temukan ilmu pengetahuan di sini!</p>
+        </li>
+        <li>
+          <a href="#history" data-subject="history">Sejarah</a>
+          <p>Sejarah mencakup peristiwa dan perubahan dalam masyarakat dan peradaban. Jelajahi sejarah di sini!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="quiz">
+      <h2>Kuis</h2>
+      <p>Pilih mata pelajaran dan ikuti kuis untuk menguji pengetahuan Anda!</p>
+      <form id="quizForm">
+        <label for="subjectSelect">Pilih Mata Pelajaran:</label>
+        <select id="subjectSelect">
+          <option value="math">Matematika</option>
+          <option value="science">Ilmu Pengetahuan</option>
+          <option value="history">Sejarah</option>
+        </select>
+        <button type="button" id="startQuizButton">Mulai Kuis</button>
+      </form>
+      <div id="quizQuestions"></div>
+      <div id="quizResult"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Belajar dan Kuis &copy; 2023. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
